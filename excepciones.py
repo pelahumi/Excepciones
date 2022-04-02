@@ -2,8 +2,16 @@ import re
 
 class Email():
     def __init__(self):
-        self.email = input("Vicente:","\n")
+        self.email = str(input("Vicente: "))
 
     def compobar(self):
-        re.search(". * @. * \ .. *", self.email)
+        try:
+            re.search(". * @. * \ .. *", self.email)
         
+        except:
+            pass
+
+
+correo = Email()
+print(correo.compobar())
+
