@@ -5,11 +5,13 @@ class Email():
         self.email = str(input("Vicente: "))
 
     def compobar(self):
+
         try:
             re.search(". * @. * \ .. *", self.email)
         
-        except:
-            pass
+        except None:
+            print("Una dirección de correo electrónico debe tener el formato xxx@xxx.xx")
+            
 
 
 correo = Email()
