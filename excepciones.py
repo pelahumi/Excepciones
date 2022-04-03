@@ -5,6 +5,7 @@ class Email():
         self.email = str(input("Vicente: "))
 
     def compobar(self):
+        
         try:
             print("Comprobando el correo electrónico")
 
@@ -16,12 +17,13 @@ class Email():
 
             if comprobacion == None:
                 print("El correo introducido no es válido")
-
-           
+                self.__init__()
+            
+            n = self.punto_algo()
     
     def punto_algo(self):
-        c1 = re.search(".es", self.email)
-        c2 = re.search(".com", self.email)
+        c1 = re.search(".es$", self.email)
+        c2 = re.search(".com$", self.email)
 
         if c1 == None or c2 == None:
             print("Ciberataque, cuenta bloqueada")
@@ -29,15 +31,12 @@ class Email():
         else:
             print("Bienvenido Vicente")
 
-
-
-            
-
-
-            
-
 correo = Email()
-correo.compobar()
+correo.compobar()            
+
+
+            
+
 
 
 
