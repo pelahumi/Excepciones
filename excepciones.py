@@ -7,13 +7,17 @@ class Email():
     def compobar(self):
 
         try:
-            re.search(". * @. * \ .. *", self.email)
-        
-        except None:
-            print("Una dirección de correo electrónico debe tener el formato xxx@xxx.xx")
+            re.search("@", self.email)
+            print("Comprobando el correo electrónico")
+
+        except:
+            pass
+
+        else:
+
+
+
             
 
 
-correo = Email()
-print(correo.compobar())
 
