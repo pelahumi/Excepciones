@@ -23,8 +23,8 @@ class Email():
             n = self.punto_algo()
     
     def punto_algo(self):
-        c1 = re.search(".es$", self.email)
-        c2 = re.search(".com$", self.email)
+        c1 = re.search(".es", self.email)
+        c2 = re.search(".com", self.email)
 
         if c1 == None or c2 == None:
             print("Ciberataque, cuenta bloqueada")
@@ -32,8 +32,7 @@ class Email():
         else:
             print("Bienvenido {}".format(self.usuario))
 
-correo = Email()
-correo.compobar()            
+         
 
 
             
