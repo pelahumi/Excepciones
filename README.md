@@ -37,3 +37,6 @@ class Email():
         else:
             print("Bienvenido {}".format(self.usuario))
 ```
+Su UML correspondiente es el siguiente:
+
+![UML](https://github.com/pelahumi/Excepciones/blob/main/UML/excepeciones.png)
