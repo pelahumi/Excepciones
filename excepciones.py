@@ -5,15 +5,23 @@ class Email():
         self.email = str(input("Vicente: "))
 
     def compobar(self):
-
         try:
-            re.search("@", self.email)
             print("Comprobando el correo electrónico")
 
         except:
             pass
 
         else:
+            comprobacion = re.search("@", self.email)
+
+            if comprobacion == None:
+                print("El correo introducido no es válido")
+            
+
+            
+
+correo = Email()
+correo.compobar()
 
 
 
