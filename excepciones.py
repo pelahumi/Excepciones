@@ -2,7 +2,8 @@ import re
 
 class Email():
     def __init__(self):
-        self.email = str(input("Vicente: "))
+        self.usuario = str(input("Usuario: "))
+        self.email = str(input("Correo electrónico: "))
 
     def compobar(self):
         
@@ -29,7 +30,7 @@ class Email():
             print("Ciberataque, cuenta bloqueada")
         
         else:
-            print("Bienvenido Vicente")
+            print("Bienvenido {}".format(self.usuario))
 
 correo = Email()
 correo.compobar()            
